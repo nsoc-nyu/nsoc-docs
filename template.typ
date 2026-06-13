@@ -53,14 +53,11 @@
     show title: set text(size: 21pt, weight: 450, font: fonts.display)
     show title: set par(leading: 0.4em, justify: false)
     show heading: set text(weight: 450, font: fonts.display, fill: colors.purple)
-    show heading.where(level: 1): set text(size: 19pt)
+    show heading.where(level: 1): set text(size: 15pt)
     show heading.where(level: 1): set block(above: 1.5em, below: 1.2em)
-    show heading.where(level: 1): strong
-    show heading.where(level: 2): set text(size: 17pt)
+    show heading.where(level: 1): upper
+    show heading.where(level: 2): set text(size: 12pt)
     show heading.where(level: 2): set block(above: 1.5em, below: 0.9em)
-    show heading.where(level: 3): set text(size: 12pt)
-    show heading.where(level: 3): set block(above: 1.5em, below: 0.9em)
-    show heading.where(level: 3): strong
     show list: it => {
         set list(indent: 2em)
         it
@@ -76,6 +73,7 @@
         leading: 0.7em,
     )
     show link: set text(fill: colors.purple)
+    show cite: super
 
     let hero = grid(
         columns: (5fr, 1fr),
