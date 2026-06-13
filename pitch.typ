@@ -52,11 +52,54 @@ monitor the ecosystems that feed enrolled projects, surfacing possible threats. 
 attack vectors, and anomalous package behavior across ecosystems to alert organizations before exposure becomes an
 incident.
 
-Hosted at NYU’s Tandon School of Engineering  in the Center for Cyber Security, NSOC brings together master's students,
-PhD researchers, and postdoctoral associates under the supervision of Prof. Justin Cappos (sometimes called the “father
-of software supply chain security”), Prof. Jiahao Yu (whose team won \$3M in the DARPA AIxCC challenge), and Andrew
-Nesbitt (founder of ecosyste.ms). We will create software supply chain security experts through real-world experience.
-In particular, the center has four main goals:
+Hosted at NYU’s Tandon School of Engineering in the Center for Cyber Security, NSOC brings together master's students,
+PhD researchers, and postdoctoral associates under the supervision of our leadership team.
+
+== Our Leadership Team
+
+NSOC is headed by world class experts. Our team will replicate and infuse our skills into a pipeline of the next
+generation of software supply chain security experts.
+
+#v(5mm)
+
+#grid(
+    columns: (1fr, 1fr),
+    column-gutter: 4mm,
+    row-gutter: 10mm,
+    align: (left + top, left + top),
+    member(
+        name: "Prof. Justin Cappos",
+        image-path: "assets/images/team/justin@300px.webp",
+        title: "NYU Tandon",
+    )[
+        The “father of software supply chain security”. Creator of TUF, Uptane, gittuf, in-toto, and Git's security
+        architecture, technologies deployed in millions of devices and across critical global infrastructure.
+    ],
+    member(
+        name: "Prof. Jiahao Yu",
+        image-path: "assets/images/team/jiahao@300px.webp",
+        title: "NYU Abu Dhabi",
+    )[
+        Cyber-AI expert focused on AI-driven vulnerability discovery, fuzzing, and automated patch generation. His team
+        won a \$3M prize in the DARPA AI Cyber Challenge (AIxCC).
+    ],
+    member(
+        name: "Andrew Nesbitt",
+        image-path: "assets/images/team/andrew@300px.webp",
+        title: "Founder, ecosyste.ms",
+    )[
+         Founder of ecosyste.ms. One of the foremost researchers performing security data analysis at open-source scale,
+         with deep expertise in large-scale ecosystem intelligence and AI-powered cybersecurity tooling.
+    ],
+    member(
+        name: "Vlad-Stefan Harbuz",
+        image-path: "assets/images/team/vlad@300px.webp",
+        title: "Founder, Software Stewardship Lab",
+    )[
+         Director of the Open Source Pledge, which has raised \$7,156,281 for maintainers. thanks.dev core developer.
+         Helped build software used by the Gates Foundation to allocate \$1B in healthcare funding.
+    ],
+)
 
 == Connect
 
@@ -88,7 +131,7 @@ changes and anomalous package behavior at scale, complemented by rolling securit
 analysts examine signals across ecosystems simultaneously, identifying suspicious dependency injections, and
 unmaintained-but-apparently-alive (“Bernie”) critical components that represent latent risk. Some example projects
 include monitoring trusted publishing adoption across ecosystems and evaluating differences in security and usability
-between implementations; an analysis of post\_install scripts including how many packages have them, what they are used
+between implementations; an analysis of post_install scripts including how many packages have them, what they are used
 for, their history, what percentage are dangerous, along with suggestions to ecosystems about how they might sandbox,
 phase out, or restrict the use of this overpermissioned mechanism.  This will help open source software stay ahead of
 emerging threats.
@@ -113,13 +156,3 @@ annual ecosystem report cards, ecosystem-specific security guidance, and direct 
 improve the security posture of the package managers on which the broader industry depends. All tooling, datasets, and
 findings will be released publicly, providing the broader tech community with data and tooling that is not available
 today.
-
-== Additional Information
-
-NSOC is headed by world class experts. Prof. Cappos has extensive real-world experience building widely adopted software
-supply chain security technologies, including TUF, Uptane, gittuf, in-toto, Git’s security architecture, millions of
-vehicles, etc. Prof. Yu is a cyber-AI expert whose work on AI-driven vulnerability discovery, fuzzing, and automated
-patch generation won a \$3M USD prize in the DARPA AI Cyber Challenge (AIxCC). Andrew Nesbitt (creator of ecosyste.ms)
-is one of the foremost security researchers performing data analysis at scale and is part of Glasswing. Our team of
-experts will replicate and infuse our skills into a pipeline of the next generation of software supply chain security
-experts.

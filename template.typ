@@ -1,24 +1,58 @@
 #let colors = (
     purple: rgb("#3d1a9e"),
-    purple_light: rgb("#e8e2fb"),
-    purple_faint: rgb("#f4f1fe"),
+    purple-light: rgb("#e8e2fb"),
+    purple-faint: rgb("#f4f1fe"),
     ink: rgb("#111018"),
-    ink_2: rgb("#3a3550"),
-    ink_3: rgb("#6b6585"),
+    ink-2: rgb("#3a3550"),
+    ink-3: rgb("#6b6585"),
     border: rgb("#ddd8f0"),
     bg: rgb("#ffffff"),
-    bg_alt: rgb("#f8f7fc"),
+    bg-alt: rgb("#f8f7fc"),
+);
+#let fonts = (
+    display: "NYU Perstare",
+    body: "Inter",
+    mono: "DM Mono",
 );
 
-#let template(doc, use_bib: true) = {
+#let member = (name: none, image-path: none, title: none, it) => {
+    set text(hyphenate: false)
+    block(below: 1em)[
+        #grid(
+            columns: (3.5em, 1fr),
+            gutter: (1.5mm),
+            align: (left + horizon, left + horizon),
+            box(
+                radius: 1mm,
+                clip: true,
+            )[
+                #image(image-path, width: 13mm)
+            ],
+            [
+                #block(
+                    below: 0.7em,
+                    text(font: fonts.display, name)
+                )
+                #text(size: 9pt, tracking: -0.09mm, font: fonts.mono, title)
+            ]
+        )
+    ]
+    block[
+        #set par(justify: false)
+        #set text(size: 10pt)
+        #it
+    ]
+}
+
+#let template(doc, use-bib: true) = {
     set page(
         paper: "a4",
         margin: (x: 18mm, y: 18mm),
         fill: colors.bg,
     )
-    show title: set text(size: 21pt, weight: 450, font: "NYU Perstare")
+    show title: set text(size: 21pt, weight: 450, font: fonts.display)
     show title: set par(leading: 0.4em, justify: false)
-    show heading: set text(weight: 450, font: "NYU Perstare")
+    show heading: set text(weight: 450, font: fonts.display, fill: colors.purple)
     show heading.where(level: 1): set text(size: 19pt)
     show heading.where(level: 1): set block(above: 1.5em, below: 1.2em)
     show heading.where(level: 1): strong
@@ -32,7 +66,7 @@
         it
     }
     set text(
-        font: "Inter",
+        font: fonts.body,
         size: 12pt,
         weight: 350,
         colors.ink
@@ -69,7 +103,7 @@
         dx: -page.margin,
         dy: -page.margin,
         block(
-            fill: colors.purple_light,
+            fill: colors.purple-light,
             inset: (x: page.margin),
             height: hero_height,
             width: page.width,
@@ -80,7 +114,7 @@
 
     doc
 
-    if use_bib {
+    if use-bib {
         pagebreak()
         bibliography("all.bib", style: "association-for-computing-machinery")
     }
