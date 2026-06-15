@@ -84,12 +84,12 @@ together master's students, PhD researchers, and postdoctoral associates.
             image-path: "assets/images/team/justin@300px.webp",
             title: "NYU Tandon",
         )[
-            The “father of software supply chain security”. Creator of
+            The “father of software supply chain security”. A creator of
             #link("https://theupdateframework.com/")[TUF],
             #link("https://uptane.org/")[Uptane],
             #link("https://gittuf.dev/")[gittuf],
             #link("https://in-toto.io/")[in-toto],
-            and Git's security architecture, technologies deployed in millions of devices and across critical global
+            and Git's tag security architecture, technologies deployed in millions of devices and across critical global
             infrastructure.
         ],
         member(
