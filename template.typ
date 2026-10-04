@@ -12,7 +12,7 @@
 #let fonts = (
     display: "NYU Perstare",
     body: "Inter",
-    mono: "DM Mono",
+    mono: "Ubuntu Mono",
 );
 
 #let member = (name: none, image-path: none, title: none, it) => {
