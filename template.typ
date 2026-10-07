@@ -64,7 +64,7 @@
     }
     set text(
         font: fonts.body,
-        size: 12pt,
+        size: 11pt,
         weight: 350,
         colors.ink
     )
@@ -96,19 +96,18 @@
             )
         ],
     )
-    let hero_height = 55mm;
     context place(
         dx: -page.margin,
         dy: -page.margin,
         block(
             fill: colors.purple-light,
             inset: (x: page.margin),
-            height: hero_height,
+            height: 53mm,
             width: page.width,
             align(horizon, hero)
         )
     )
-    v(hero_height)
+    v(47mm)
 
     doc
 
