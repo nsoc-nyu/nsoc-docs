@@ -15,18 +15,18 @@
     ]
 ]
 
-- connecting researchers to Open Source projects,
-- inspecting projects for vulnerabilities,
-- detecting anomalous packages across ecosystems, and
+- connecting researchers as liaisons to specific Open Source ecosystems,
+- inspecting projects for vulnerabilities with fuzzing frameworks and LLM-assisted pipelines,
+- detecting anomalous or unmaintained packages through continuous monitoring, and
 - directing the production of annual ecosystem security evaluations.
 
-This means we aim to deliver a range of benefits to the Open Source community. Here are some examples.
+Here are some of the benefits we aim to deliver to the Open Source community.
 
 = Educating researchers on respectful contribution
 
 NSOC-affiliated students serve as dedicated liaisons that work to make specific Open Source ecosystems more secure. One
-student might be dedicated to improving package manager security in the Python ecosystem; another to identifying
-vulnerabilities in Rust supply chains; and so on.
+student might work on improving package manager security in the Python ecosystem; another on identifying vulnerabilities
+in Rust supply chains; and so on.
 
 #grid(
     columns: (1fr, 40mm),
@@ -36,9 +36,11 @@ vulnerabilities in Rust supply chains; and so on.
         But *how can researchers contribute in a respectful manner that meets each project's needs?* Maintainers are already
         overwhelmed by burnout and AI contributions, and researchers should not further burden them.
 
-        To answer this question, NSOC will collaborate with the #link("https://stewardshiplab.org")[Software Stewardship Lab],
-        whose researchers have authored the most comprehensive reports on burnout and mental health among Open Source
-        maintainers.
+        To answer this question, NSOC will collaborate with the #link("https://stewardshiplab.org")[Software Stewardship
+        Lab], whose researchers have authored the to-date most comprehensive
+        #link("https://stewardshiplab.org/reports/burnout-in-open-source-a-structural-problem-we-can-fix-together/")[reports
+        on burnout]
+        and mental health among Open Source maintainers.
 
         We will then create educational materials that summarise our findings in order to help other organisations give back to
         Open Source in an effective and respectful way.
@@ -86,12 +88,9 @@ and
 However, decisions to use such techniques are often made without cross-ecosystem collaboration and deliberation, and
 with limited research to back these decisions up.
 
-NSOC aims to contribute to the community's understanding of software supply chain security techniques by creating
-research reports, and disseminating the results in both article and video form.
-
-Using our expertise to investigate the pros and cons of these security strategies will allow us to provide
-evidence-based recommendations to the leaders of package management ecosystems, thereby improving security for millions
-of developers.
+NSOC aims to use our members' expertise to write reports that investigate the pros and cons of such security strategies,
+then disseminate the results in both article and video form. This will allow us to provide evidence-based
+recommendations to the leaders of package management ecosystems, thereby improving security for millions of developers.
 
 = Book: Tai & The Keys of Trust
 
@@ -104,9 +103,9 @@ of developers.
         compromised? Code signing helps, but only until the keys doing the signing get leaked.
 
         #link("https://theupdateframework.io/")[TUF (The Update Framework)], led by Justin Cappos, provides a way to
-        protect software update systems even against attackers that compromise the repository or signing keys.
+        protect software update systems even against attackers that compromise package repositories or signing keys.
 
-        To maximise the effectiveness of this technology, we want to make sure it can be widely understood, which is why
+        To maximise the impact of this technology, we want to make sure it can be widely understood, which is why
         we collaborated with artists to create
         #link("https://vlad.website/static/tai-and-the-keys-of-trust.pdf")[_Tai & The Keys of Trust_],
         a children's-book-styled explainer of TUF.
@@ -117,7 +116,7 @@ of developers.
 = Software Supply Chain Map
 
 Software supply chains are complex and made up of many interlocking parts: code forges, VCS, CI/CD, build tools, static
-analysis, package managers and registries, IoT, IDEs and more.
+analysis, package managers and registries, IoT devices, IDEs and more.
 
 Students and experienced programmers alike often find this complexity overwhelming, which is a barrier to developer
 education.
